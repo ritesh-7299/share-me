@@ -31,6 +31,7 @@ export function MeetingPage() {
   const [openConnection, setOpenConnection] = useState(false);
   const [signalId, setSignalId] = useState(null);
   const [socket, setSocket] = useState(null);
+  const [joined, setJoined] = useState(null);
 
   const handleSend = async () => {
     const offer = await createOffer();
